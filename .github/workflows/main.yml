@@ -26,9 +26,9 @@ jobs:
       run: |
         python pipeline.py
 
-        - name: Upload output DB
-          uses: actions/upload-artifact@v3
-          with:
+     - name: Upload output DB
+       uses: actions/upload-artifact@v3
+       with:
           name: sales-db
           path: sales.db
 
